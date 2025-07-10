@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: rgb(161, 161, 161);
+}
+
+button {
+  margin: 1rem;
+  padding: 0.3rem;
+}
+
+button:hover {
+  transform: scale(1.5) rotate3d(1, 1, 1, 360deg);
+  color: rgb(55, 14, 118);
+  background-color: rgb(92, 255, 255);
+  border-radius: 2.5rem;
+  transition: all 300ms ease-in-out;
+}
+
+::before {
+  color: blanchedalmond;
+  font-size: 3rem;
+}
+
+::after {
+  color: aquamarine;
+  font-size: 2rem;
+}
+
+.dekorasjon::before {
+  display: block;
+  content: "En veldig dekorativ linje";
+}
+
+/*.katteListen{} */
+
+.listeDekorasjon:not(:nth-child(3)) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  min-width: 30rem;
+  min-height: 2rem;
+}
+
+.listeDekorasjon:nth-child(odd):not(:nth-child(3)) {
+  background-color: rgb(105, 93, 93);
+}
+
+.listeDekorasjon:first-child,
+.listeDekorasjon:last-child {
+  color: rgb(75, 164, 23);
+}
+
+.listeDekorasjon::after:not(:nth-child(3)) {
+  content: "*";
+}
+
+.listeDekorasjon:nth-child(even) {
+  color: brown;
+  background-color: yellowgreen;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  gap: 0.1rem;
+  margin-bottom: 2rem;
+}
+
+.flex-column > * {
+  margin: 1rem;
+  padding: 1rem;
+}
