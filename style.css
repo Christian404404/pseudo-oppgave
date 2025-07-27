@@ -14,7 +14,7 @@ button {
 }
 
 button:hover {
-  transform: scale(1.5) rotate3d(1, 1, 1, 360deg);
+  transform: scale(1.5) rotateY(360deg);
   color: rgb(55, 14, 118);
   background-color: rgb(92, 255, 255);
   border-radius: 2.5rem;
