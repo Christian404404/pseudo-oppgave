@@ -23,7 +23,7 @@ button:hover {
 
 ::before {
   color: blanchedalmond;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 ::after {
@@ -43,7 +43,7 @@ button:hover {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   min-width: 30rem;
   min-height: 2rem;
 }
@@ -64,6 +64,7 @@ button:hover {
 .listeDekorasjon:nth-child(even) {
   color: brown;
   background-color: yellowgreen;
+  font-size: 1.5rem;
 }
 
 .flex-column {
@@ -81,4 +82,64 @@ button:hover {
 .flex-column > * {
   margin: 1rem;
   padding: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10rem;
+  row-gap: 1rem;
+  margin-top: 4rem;
+  grid-template-areas:
+    "neko-chan neko-chan neko-chan"
+    "neko-chan neko-chan neko-chan"
+    "neko-chan neko-chan neko-chan";
+}
+
+.neko-chan {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(137, 24, 24);
+  width: 4rem;
+  height: 4rem;
+  position: relative;
+  min-height: 6rem;
+  min-width: 6rem;
+}
+
+.neko-chan::before {
+  border: 0.1rem solid rgb(10, 90, 55);
+  position: absolute;
+  display: block;
+  content: "";
+  top: -1rem;
+  bottom: -1rem;
+  left: -1rem;
+  right: -1rem;
+  z-index: -1;
+}
+.neko-chan::after {
+  border: 0.2rem solid rgb(55, 14, 118);
+  position: absolute;
+  display: block;
+  content: "";
+  top: -0.5rem;
+  bottom: -0.5rem;
+  left: -0.5rem;
+  right: -0.5rem;
+  z-index: -1;
+}
+
+textarea {
+  flex: 1;
+  resize: none;
+  width: 100%;
+  text-align: center;
+  padding-top: 1.5rem;
+  overflow: hidden;
+}
+
+textarea:focus {
+  background-color: aquamarine;
+  outline: none;
 }
