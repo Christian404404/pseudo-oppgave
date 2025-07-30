@@ -59,6 +59,7 @@ button:hover {
 
 .listeDekorasjon:not(:nth-child(3))::after {
   content: "★";
+  color: rgb(255, 255, 0);
 }
 
 .listeDekorasjon:nth-child(even) {
