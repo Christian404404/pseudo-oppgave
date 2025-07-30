@@ -57,8 +57,8 @@ button:hover {
   color: rgb(75, 164, 23);
 }
 
-.listeDekorasjon::after:not(:nth-child(3)) {
-  content: "*";
+.listeDekorasjon:not(:nth-child(3))::after {
+  content: "★";
 }
 
 .listeDekorasjon:nth-child(even) {
